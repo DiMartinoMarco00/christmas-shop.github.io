@@ -1,0 +1,40 @@
+.footer
+{
+    text-align: center;
+    background-color: $white;
+
+    img 
+    {
+       height: 15rem;
+    }
+
+    .share
+    {
+        margin: 4rem 0;
+
+        a i.fa-brands
+        {
+           height: 5rem;
+           width: 5rem;
+           line-height: 5rem;
+           font-size: 2rem;
+           background-color: $light-bg;
+           margin: 0 0.2rem;
+           border-radius: 50%;
+           color: $light-color;
+           transition: 0.2s linear;
+
+           &:hover 
+           {
+              background-color: $black;
+              color: $white;
+           }
+        }
+    }//fine .share
+
+    .credit p
+    {
+       font-size: 2rem;
+       color: $light-color;
+    }
+}//fine .footer

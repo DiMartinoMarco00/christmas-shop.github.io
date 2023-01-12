@@ -1,0 +1,33 @@
+.header 
+{
+    background-color: $white;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: -6.8rem;
+    transition: 0.2s linear;
+
+    &.active
+    {
+        margin-top: 0;
+    }
+
+    .navbar
+    {
+        display: flex;
+
+        a 
+        {
+            flex: 1;
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.8rem;
+            color: $black;
+
+            &:hover 
+            {
+               background-color: $black;
+               color: $white;
+            }
+        }
+    }//fine .navbar
+}//fine .header

@@ -1,0 +1,48 @@
+.about 
+{
+    background: url('../images/bg-img.webp');
+    background-color: $black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .row 
+    {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+
+        .image
+        {
+            flex: 1 1 40rem;
+
+            img 
+            {
+               width: 100%;
+            }
+        }//fine .image
+
+        .content
+        {
+            flex: 1 1 40rem;
+            text-align: center;
+            
+            h3 
+            {
+                font-size: 3rem;
+                color: $white;
+                margin-bottom: 1rem;
+    
+            }
+
+            p 
+            {
+               padding: 1rem 0;
+               font-size: 1.6rem;
+               color: $light-white;
+               line-height: 2;
+            }
+        }//fine .content
+    }//fine .row
+}//fine .about

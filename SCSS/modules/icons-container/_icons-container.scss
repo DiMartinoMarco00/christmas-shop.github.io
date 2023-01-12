@@ -1,0 +1,48 @@
+.icons-container 
+{
+    background-color: $white;
+
+    .box-container
+    {
+        /*
+            Il valore "space-evenly" per la proprietà justify-content distribuisce lo spazio tra gli elementi 
+            in modo uniforme. È simile a "space-around", 
+            ma fornisce uno spazio uguale anziché dimezzato sui bordi.
+        */
+        display: grid;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(auto-fit, 16rem);
+        column-gap: 2rem;
+        row-gap: 5rem;
+
+        .box 
+        {
+            text-align: center;
+
+            img 
+            {
+                height: 10rem;
+                margin-bottom: 1.5rem;
+                transition: 0.2s linear;
+            }
+
+            &:hover img 
+            {
+                transform: scale(0.9);
+            }
+
+            p 
+            {
+                font-size: 1.6rem;
+                color: $light-color;
+            }
+
+            &:hover p 
+            {
+               color: $main-color;
+            }
+        }// fine .box
+    }//fine .box-container
+}//fine .icons-container
+
